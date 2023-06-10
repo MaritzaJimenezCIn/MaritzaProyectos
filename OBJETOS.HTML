@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+    <script>
+        function Objetos(){
+            let conocer = document.getElementById("conocer").value;
+            let Maritza = {
+                edad: 18,
+                cabello: "Marron",
+                complexion: "Mediana",
+                cara: "Redonda",
+                estado_civil: "Comprometida",
+                amigos:[
+                    "Yanet", "Christo", "Jorge", "Vladimir", "Gerardo", "Alan"
+                    ]
+            };
+
+            document.write("Quisiste conocer de Maritza su "+conocer+": "+Maritza[conocer]);
+        }
+        
+    
+    </script>
+</head>
+<body>
+    <p>Maritza
+        conoce su edad, color de cabello, su color de cabello,<br>su complexion, estado civil o amigos
+    </p>
+
+
+    dime a que quieres conocer de ella<br>
+    <input type="text" id="conocer">
+    <button onclick="Objetos()">Buscar</button>
+</body>
+</html>
