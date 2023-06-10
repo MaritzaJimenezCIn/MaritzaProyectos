@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglo</title>
+    <script>
+        function arreglos(){
+            let text = document.getElementById("arr").value;
+            let arr = text.split("");
+            let cambio = document.getElementById("cambio").value;
+            let insert = document.getElementById("insert").value;
+
+            console.log(cambio - 1);
+            console.log(arr);
+            console.log(insert);
+            console.log(arr.splice(cambio - 1,1,insert));
+        
+            document.write("Nuevo Arreglo: "+arr);
+            
+        
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Ingresa el arrelgo:<br>
+        <input type="text" id="arr"><br>
+        <br>Donde vamos a hacer el cambio:<br>
+        <input type="text" id="cambio"><br>
+        <br>Que vamos a insertar:<br>
+        <input type="text" id="insert"><br>
+        <br><button onclick="arreglos()">Insertar</button>
+    </form>
+</body>
+</html>
